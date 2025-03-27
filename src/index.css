@@ -36,6 +36,10 @@ body {
   pointer-events: none;
 }
 
+.overlay--enable {
+  pointer-events: all;
+}
+
 .loader {
   position: absolute;
   top: 0;

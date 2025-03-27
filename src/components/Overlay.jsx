@@ -31,8 +31,17 @@ export const Overlay = () => {
           </button>
         </div>
       )}
-      <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Finally, as you see, I'm currently exploring 3D website design..</p>
+      <div className={`outro ${end ? "outro--appear overlay--enable" : ""}`}>
+        <p className="outro__text">Finally, Currently exploring 3D website design using Three JS..</p>
+        <p className="outro__text">Check out my full portfolio!</p>
+        <button
+            className="explore"
+            onClick={() => {
+              window.open("https://thatbaz.github.io/site/", "_self");
+            }}
+          >
+            Portfolio & Services
+          </button>
       </div>
     </div>
   );
